@@ -1,0 +1,101 @@
+/*
+rgb(15, 40, 84)
+rgb(28, 77, 141)
+rgb(73, 136, 196)
+rgb(189, 232, 245)
+*/
+
+* {
+	border: none;
+    border-radius: 0;
+    font-family: DynaPuff, "RecMonoSmCasual Nerd Font";
+    font-size: 15px;
+	font-weight: 600;
+	letter-spacing: 1px;
+    min-height: 0;
+    color: rgba(189, 232, 245, 0.85);
+}
+
+window#waybar {
+    /* background-color: rgba(15, 40, 84, 0.4); */
+	background-color: rgba(28, 77, 141, 0.3);
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	border-radius: 0 0 15 15;
+}
+
+/* tooltip {
+	background: transparent;
+	border: transparent;
+}
+tooltip label {
+	color: transparent;
+} */
+
+#workspaces {
+	background-color: rgba(73, 136, 196, 0.25);
+	/* background-color: rgba(28, 77, 141, 0.3); */
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	padding: 2 4 2 0;
+	margin: 5;
+	border-radius: 12;
+}
+#workspaces button {
+    padding: 0 5;
+}
+#workspaces button:hover {
+	background: transparent;
+}
+
+#clock {
+	background-color: rgba(73, 136, 196, 0.25);
+	/* background-color: rgba(28, 77, 141, 0.3); */
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	padding: 0 10;
+	margin: 5;
+	border-radius: 12;
+}
+
+#network {
+	background-color: rgba(73, 136, 196, 0.25);
+	/* background-color: rgba(28, 77, 141, 0.3); */
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	padding: 0 17 0 10;
+	margin: 5 8;
+	border-radius: 12;
+}
+
+#pulseaudio {
+	background-color: rgba(73, 136, 196, 0.25);
+	/* background-color: rgba(28, 77, 141, 0.3); */
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	padding: 0 0 0 10;
+	margin: 5 2;
+	border-radius: 12 6 6 12;
+}
+
+#backlight {
+	background-color: rgba(73, 136, 196, 0.25);
+	/* background-color: rgba(28, 77, 141, 0.3); */
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	padding: 0 10 0 10;
+	margin: 5 2;
+	border-radius: 6;
+}
+
+#battery {
+	background-color: rgba(73, 136, 196, 0.25);
+	/* background-color: rgba(28, 77, 141, 0.3); */
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	padding: 0 15 0 10;
+	margin: 5 2;
+	border-radius: 6 12 12 6;
+}
+
+#custom-power {
+	background-color: rgba(73, 136, 196, 0.25);
+	/* background-color: rgba(28, 77, 141, 0.3); */
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	padding: 0 10 0 6;
+	margin: 5 5 5 8;
+	border-radius: 10000;
+}

@@ -1,0 +1,77 @@
+// -*- mode: jsonc -*-
+{
+    "layer": "top",
+    "height": 25,
+    "spacing": 0,
+    
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "network",
+        "pulseaudio",
+        "backlight",
+        "battery",
+        "tray",
+		"custom/power"
+    ],
+
+    // Modules configuration
+	"hyprland/workspaces": {
+		"format": "{icon}",
+		"format-icons": {
+        	"default": "",
+			"active": ""
+    	}
+	},
+
+    "clock": {
+		"tooltip": false
+        // "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        // "format-alt": "{:%Y-%m-%d}"
+    },
+
+    "network": {
+		"tooltip": false,
+        "format-wifi": "{essid} ",
+        "format-disconnected": "Disconnected ⚠"
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        // "format-ethernet": "{ipaddr}/{cidr} ",
+        // "tooltip-format": "{ifname} via {gwaddr} ",
+        // "format-linked": "{ifname} (No IP) ",
+        // "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+
+	"pulseaudio": {
+		"tooltip": false,
+		"format": "{volume}% {icon} {format_source}",
+		"format-muted": "Muted  {format_source}",
+		"format-source": "",
+		"format-source-muted": "",
+		"format-icons": {
+			"default": ["", "", ""]
+		}
+	},
+
+    "backlight": {
+		"tooltip": false,
+        "format": "{percent}% {icon}",
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
+    },
+
+    "battery": {
+		"tooltip": false,
+        "format": "{capacity}% {icon}",
+        "format-plugged": "{capacity}% ",
+        "format-icons": ["", "", "", "", ""]
+    },
+
+    "custom/power": {
+		"tooltip": false,
+        "format" : "⏻",
+		"on-click": "systemctl poweroff"
+    }
+}
